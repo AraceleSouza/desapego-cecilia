@@ -1,0 +1,288 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('../imagens/plano_de_fundo_azul.png');
+  background-size: cover; /* cobre a tela toda */
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+}
+
+/* HEADER */
+header {
+  position: sticky;
+  top: 0;
+  background-color: #ffffff; /* branco sólido */
+  padding: 20px 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05); /* sombra suave */
+}
+
+/* MENU */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav a {
+  display: inline-block;
+  width: 120px; /* 👈 define tamanho igual pra todos */
+  text-align: center;
+  text-decoration: none;
+  background-color: #f8c8dc;
+  padding: 10px 0; /* só vertical agora */
+  border-radius: 20px;
+  color: #2f4f5f;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  background-color: #f48ca0;
+  color: white;
+}
+
+/* HERO */
+.hero {
+  padding: 20px 20px;
+}
+
+
+/* LOGO */
+.hero-img {
+  width: 350px;
+  margin-bottom: 10px;
+}
+
+/* TÍTULO */
+.hero h1 {
+  font-size: 38px;
+  color: #5a7d8a;
+  margin-bottom: 20px;
+}
+
+/* TEXTO */
+.hero p {
+  color: #d4a437;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* BOTÃO */
+.btn {
+  display: inline-block;
+  background-color: #80c342;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #8e9900;
+}
+
+/* WHATSAPP */
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.whatsapp img {
+  width: 75px;
+}
+
+
+/* NOME DO PRODUTO */
+.nome {
+  font-size: 15px;
+  color: #444;
+  margin-top: 8px;
+}
+
+/* ESTADO */
+.estado {
+  font-size: 12px;
+  color: #777;
+  margin: 5px 0;
+}
+
+/* PREÇO */
+.preco {
+  font-size: 16px;
+  font-weight: bold;
+  color: #2f4f5f;
+  margin: 8px 0;
+}
+
+/* SCROLL SUAVE */
+html {
+  scroll-behavior: smooth;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* desktop */
+  gap: 20px;
+  padding: 20px;
+  max-width: 1000px; /* 👈 limita largura */
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr); /* tablet */
+  }
+}
+
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: 1fr; /* celular */
+  }
+}
+
+.produto {
+  background-color: white;
+  padding: 15px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.produto img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* BOTAO COMPRAR*/
+.produto a {
+  display: inline-block;
+  margin-top: 10px;
+  background-color: #80c342;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 15px;
+  text-decoration: none;
+}
+
+.produto:hover {
+  transform: scale(1.03);
+  transition: 0.3s;
+}
+
+/* CONTATO*/
+
+.contato {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.contato h1 {
+  margin-bottom: 20px;
+}
+
+.btn-whatsapp {
+  display: inline-block;
+  background-color: #25d366;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 20px;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+.cidade {
+  margin: 15px 0;
+  font-weight: bold;
+}
+
+.contato h2 {
+  margin-top: 20px;
+}
+
+h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.final {
+  margin-top: 30px;
+  color: #ca1b56;
+  font-weight: bold;
+}
+
+.icone {
+  width: 40px;
+  vertical-align: middle;
+  margin-right: 3px;
+}
+
+.linha {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* centraliza na tela */
+  gap: 3px; /* espaço entre ícone e texto */
+}
+
+/* SOBRE */
+
+.sobre {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 25px 20px;
+  flex-wrap: wrap;
+}
+
+.sobre-imagem img {
+  width: 280px;
+  border-radius: 15px;
+}
+
+.sobre-texto {
+  max-width: 500px;
+  text-align: left;
+}
+
+.sobre-texto h1 {
+  margin-bottom: 20px;
+}
+
+.sobre-texto p {
+  margin-bottom: 15px;
+}
+
+.frase-final {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #2f4f5f;
+}
+
+/* BOTÕES TAMANHO*/
+
+.filtros button {
+  margin: 5px;
+  padding: 10px 15px;
+  border-radius: 15px;
+  border: none;
+  background-color: #f8c8dc;
+  cursor: pointer;
+}
